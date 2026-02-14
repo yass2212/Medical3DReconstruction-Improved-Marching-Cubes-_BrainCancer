@@ -85,41 +85,6 @@ python surface_reconstruction.py
 - Calculates distance metrics (Hausdorff Distance, Mean Surface Distance)
 - Displays 2×2 comparative visualization
 
-### Programmatic Usage
-
-For custom processing pipelines:
-
-```python
-from pathlib import Path
-from surface_reconstruction import (
-    mc_surface_skimage,
-    imc_surface,
-    tighten_mesh_IMC,
-    surface_distances,
-    load_binary_zooms
-)
-
-# Load binary segmentation mask
-binary_vol, spacing = load_binary_zooms(Path("brain_mask.nii.gz"))
-
-# Generate surfaces
-V_mc, F_mc = mc_surface_skimage(binary_vol, spacing)
-V_imc, F_imc = imc_surface(binary_vol, spacing)
-
-# Optimize with tightening
-V_opt, F_opt = tighten_mesh_IMC(
-    V_imc, F_imc,
-    MAC_deg=20.0,           # Maximum normal angle (degrees)
-    MDC_mm=1.2 * min(spacing),  # Maximum edge distance (mm)
-    max_passes=2
-)
-
-# Compare meshes
-distances = surface_distances(V_mc, F_mc, V_opt, F_opt)
-print(f"Hausdorff Distance: {distances['hd']:.3f} mm")
-print(f"Mean Surface Distance: {distances['msd']:.3f} mm")
-```
-
 ## Dataset Structure
 
 Expected UCSF 3D Brain MRI dataset structure:
