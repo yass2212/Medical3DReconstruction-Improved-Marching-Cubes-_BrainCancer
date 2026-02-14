@@ -1,6 +1,6 @@
-# Medical Surface Reconstruction: MC vs IMC
+# Medical Surface Reconstruction: MC and IMC + comparison and analysis
 
-**Reimplementation of Improved Marching Cubes for Brain Tumor 3D Reconstruction**
+**Improved Marching Cubes for Brain Tumor 3D Reconstruction**
 
 *Based on: "3D reconstruction of brain tumors from 2D MRI scans: An improved marching cube algorithm" (Mittal et al., 2024)*
 
