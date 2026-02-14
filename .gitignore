@@ -38,11 +38,6 @@ env/
 #Jupyter Notebook
 .ipynb_checkpoints
 
-# Data files
-data/
-*.nii
-*.nii.gz
-*.dcm
 
 #Output files
 outputs/
