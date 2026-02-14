@@ -3,7 +3,7 @@
 **Reimplementation of Improved Marching Cubes for Brain Tumor 3D Reconstruction**
 
 *Based on: "3D reconstruction of brain tumors from 2D MRI scans: An improved marching cube algorithm" (Mittal et al., 2024)*
-Dataset : https://huggingface.co/datasets/determined-ai/3d-brain-mri from UCSF-PDGM Dataset
+
 ## Overview
 
 Brain tumors represent a serious pathology with over 320,000 new cases worldwide annually. Obtaining reliable estimation of tumor volume and geometry is essential for staging, surgical planning, and treatment follow-up. While MRI provides 2D slices sampling a 3D volume, mentally visualizing complex tumor shapes remains challenging even for experienced clinicians.
