@@ -4,6 +4,8 @@
 
 *Based on: "3D reconstruction of brain tumors from 2D MRI scans: An improved marching cube algorithm" (Mittal et al., 2024)*
 
+Note : The report (IMCReport.pdf) describe the work, there is a CNN part that isn't in the repository for now as I'm currently improving it.
+
 ## Overview
 
 Brain tumors represent a serious pathology with over 320,000 new cases worldwide annually. Obtaining reliable estimation of tumor volume and geometry is essential for staging, surgical planning, and treatment follow-up. While MRI provides 2D slices sampling a 3D volume, mentally visualizing complex tumor shapes remains challenging even for experienced clinicians.
@@ -179,7 +181,7 @@ max_passes = 6
 3. **IMCext**: Extreme simplification (20-40× reduction) with moderate geometric impact
 4. **Topology**: Watertightness and component count stable across variants
 
-*See Section 3.2 of the full report for detailed analysis.*
+*See Section 3.2 of the IMCReport.pdf for detailed analysis.*
 
 ## Algorithm Details
 
